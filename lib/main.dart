@@ -51,44 +51,31 @@ class _BodyHomeState extends State<BodyHome> {
       child: ClipRRect(
         child: Scaffold(
           extendBody: true,
-            body: Center(
-              child: badan.elementAt(_selectedNavbar),
-            ),
-            bottomNavigationBar: CurvedNavigationBar(
-              backgroundColor: Colors.transparent,
-              buttonBackgroundColor: Colors.orange,
-              height: 50,
-              items: [
-                Icon(Icons.home, size: 20, color: Colors.white,),
-                Icon(Icons.person, size: 20, color: Colors.white,),
-              ],
-              onTap: _changeSelectedNavBar,
-              animationDuration: Duration(milliseconds: 300),
-              color: Colors.orange,
-            )
-      
-            // BottomNavigationBar(
-            //   items: const <BottomNavigationBarItem>[
-            //     BottomNavigationBarItem(
-            //       activeIcon: Icon(Icons.home),
-            //       icon: Icon(Icons.home_outlined),
-            //       title: Text('.'),
-            //     ),
-            //     BottomNavigationBarItem(
-            //       activeIcon: Icon(Icons.person),
-            //       icon: Icon(Icons.person_outline),
-            //       title: Text('.'),
-            //     ),
-            //   ],
-            //   currentIndex: _selectedNavbar,
-            //   selectedItemColor: Colors.red,
-            //   unselectedItemColor: Colors.grey,
-            //   showUnselectedLabels: false,
-            //   onTap: _changeSelectedNavBar,
-            //   backgroundColor: Color(0xFF08091B),
-            //   elevation: 0,
-            // ),
-            ),
+          body: Center(
+            child: badan.elementAt(_selectedNavbar),
+          ),
+          bottomNavigationBar: BottomNavigationBar(
+            items: const <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                activeIcon: Icon(Icons.home),
+                icon: Icon(Icons.home_outlined),
+                title: Text('.'),
+              ),
+              BottomNavigationBarItem(
+                activeIcon: Icon(Icons.person),
+                icon: Icon(Icons.person_outline),
+                title: Text('.'),
+              ),
+            ],
+            currentIndex: _selectedNavbar,
+            selectedItemColor: Colors.white,
+            unselectedItemColor: Colors.white,
+            showUnselectedLabels: false,
+            onTap: _changeSelectedNavBar,
+            backgroundColor: Colors.orange,
+            elevation: 0,
+          ),
+        ),
       ),
     );
   }

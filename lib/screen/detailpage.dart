@@ -30,7 +30,8 @@ class _DetailPageState extends State<DetailPage> {
               );
             },
             icon: Icon(
-              Icons.arrow_back_ios,color: Colors.orange,
+              Icons.arrow_back_ios,
+              color: Colors.white,
             ),
             color: Color(0xFF08091B),
           ),
@@ -49,14 +50,14 @@ class _DetailPageState extends State<DetailPage> {
                         child: Container(
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
-                          begin: Alignment.center,
-                          end: Alignment.topCenter,
-                          stops: [0.1, 0.9],
-                          colors: [
-                            Colors.black.withOpacity(0.8),
-                            Colors.white.withOpacity(0.1),
-                          ],
-                        ),
+                              begin: Alignment.center,
+                              end: Alignment.topCenter,
+                              stops: [0.1, 0.9],
+                              colors: [
+                                Colors.black.withOpacity(0.8),
+                                Colors.white.withOpacity(0.1),
+                              ],
+                            ),
                             image: DecorationImage(
                               fit: BoxFit.cover,
                               alignment: FractionalOffset.topCenter,

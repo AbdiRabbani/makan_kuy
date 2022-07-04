@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/model/recipe.dart';
 import 'package:movie_app/screen/homepage.dart';
-import 'detailpage2.dart';
+import 'detailpage.dart';
 
 class AllPage extends StatefulWidget {
   const AllPage({Key? key, required this.resep}) : super(key: key);
@@ -60,7 +60,7 @@ class _AllPageState extends State<AllPage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => DetailPage2(
+                      builder: (context) => DetailPage(
                         resep: widget.resep[index],
                       ),
                     ),
