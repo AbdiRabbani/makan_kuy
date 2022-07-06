@@ -58,13 +58,12 @@ class _BodyHomeState extends State<BodyHome> {
               BottomNavigationBarItem(
                 activeIcon: Icon(Icons.home),
                 icon: Icon(Icons.home_outlined),
-                title: Text('.'),
+                label: ".",
               ),
               BottomNavigationBarItem(
-                activeIcon: Icon(Icons.person),
-                icon: Icon(Icons.person_outline),
-                title: Text('.'),
-              ),
+                  activeIcon: Icon(Icons.person),
+                  icon: Icon(Icons.person_outline),
+                  label: "."),
             ],
             currentIndex: _selectedNavbar,
             selectedItemColor: Colors.white,
